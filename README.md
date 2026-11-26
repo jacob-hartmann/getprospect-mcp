@@ -13,12 +13,14 @@ A [Model Context Protocol](https://modelcontextprotocol.io/) (MCP) server for th
 - **Lead Search** — Search leads and companies with rich filters (title, seniority, industry, location)
 - **Contact Management** — Full CRUD for CRM contacts with property support
 - **Company Management** — Full CRUD for CRM companies
-- **List Management** — Create, update, delete lists; add/remove contacts
+- **List Management** — Create, update, delete lists; add contacts to lists; view list sizes and contents
 - **LinkedIn Enrichment** — Enrich contacts by LinkedIn URL
 - **Workspace Properties** — Browse all custom properties in your workspace
 - **Dual Transport** — Supports both stdio and HTTP (StreamableHTTP) transports
 
 ## Installation
+
+Requires [Node.js](https://nodejs.org/) 22 or later.
 
 ### Using npx (recommended)
 
