@@ -72,7 +72,7 @@ export function registerContactTools(server: McpServer): void {
         path: "/api/v1/contacts/contact/search",
         method: "POST",
         body,
-        params: params as Record<string, string>,
+        params,
       });
 
       if (!result.success) return formatError(result.error, "contact");
