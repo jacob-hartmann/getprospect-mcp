@@ -1,6 +1,6 @@
 {
   "name": "getprospect-mcp",
-  "version": "0.1.0-rc.1",
+  "version": "0.1.0",
   "description": "Model Context Protocol (MCP) server for the GetProspect lead generation platform",
   "type": "module",
   "main": "./dist/index.js",
