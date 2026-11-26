@@ -58,7 +58,7 @@ export function registerListTools(server: McpServer): void {
       const result = await clientResult.client.request<unknown>({
         path: "/api/v1/contacts/lists",
         method: "GET",
-        params: params as Record<string, string>,
+        params,
       });
 
       if (!result.success) return formatError(result.error, "list");
@@ -264,7 +264,7 @@ export function registerListTools(server: McpServer): void {
       const result = await clientResult.client.request<unknown>({
         path: `/api/v1/contacts/lists/${args.listId}/contacts/search`,
         method: "GET",
-        params: params as Record<string, string>,
+        params,
       });
 
       if (!result.success) return formatError(result.error, "list");

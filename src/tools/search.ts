@@ -89,7 +89,7 @@ export function registerSearchTools(server: McpServer): void {
         path: "/public/v1/insights/contacts",
         method: "POST",
         body,
-        params: params as Record<string, string>,
+        params,
       });
 
       if (!result.success) return formatError(result.error);
@@ -153,7 +153,7 @@ export function registerSearchTools(server: McpServer): void {
         path: "/public/v1/insights/companies",
         method: "POST",
         body,
-        params: params as Record<string, string>,
+        params,
       });
 
       if (!result.success) return formatError(result.error);

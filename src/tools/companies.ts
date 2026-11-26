@@ -50,7 +50,7 @@ export function registerCompanyTools(server: McpServer): void {
       const result = await clientResult.client.request<unknown>({
         path: "/api/v1/companies/company/search/query",
         method: "GET",
-        params: params as Record<string, string>,
+        params,
       });
 
       if (!result.success) return formatError(result.error, "company");
